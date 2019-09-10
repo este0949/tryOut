@@ -1,0 +1,149 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Helvetica, san-serif;
+    font-size: 0.9rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+header{
+    display: flex;
+    background-image: url(imgs/hero.jpg);
+    padding: 230px;
+    align-content: center;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    font-weight: bold;;
+    margin: 2rem;
+    text-decoration: overline;
+}
+nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    border: none;
+    font-size: 1.2rem;
+    font-family: helvetica;
+    margin: 1rem;
+    padding: 0.5rem;
+    transition: all .15s ease-in-out;
+    }
+nav a:hover{
+    text-decoration:overline;
+    color: gray;
+    transform: scale(1.2);
+}
+
+button:hover{
+    color: grey;
+    cursor: pointer;
+    transform: scale(1.2);
+    text-decoration: overline;
+}
+
+.deals>section{
+    padding-top: 100px;
+    display: grid;
+    max-width: 1200px;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     grid-template-rows:auto;
+    grid-gap: 60px;
+    margin-bottom: 60px;
+}
+.deals h1{
+    font-size:22px;
+}
+.deals>section>h1{
+    font-size: 60px;
+    text-decoration: overline;
+
+}
+
+main button{
+    border: none;
+    font-weight: bold;
+    font-size: 13px;
+    transition: all .15s ease-in-out;
+}
+.meal{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+article > img{
+    width: 100%;
+    height: auto;
+}
+
+.dishImg{
+    transition: all .15s ease-in-out;
+}
+.dishImg:hover{
+    transform: scale(1.1);
+}
+
+.price{
+    font-size: 1.5rem;
+    text-decoration: overline;
+}
+
+.discount{
+    font-size: 1.8rem;
+    color: red;
+    text-decoration: overline;
+}
+.onsale{
+    text-decoration: line-through;
+}
+.soldOut::after{
+    content: "S O L D . O U T";
+    font-weight: bold;
+    background-color: darkgrey;
+    text-align: center;
+    padding: 0.7rem;
+
+}
+.alcohol{
+    font-size:0.7rem;
+    font-style: italic;
+
+}
+.vegetarian{
+    color: darkgreen;
+    float: right;
+}
+.hide{
+    display: none;
+}
+.modal-background {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 1em;
+    padding: 2em;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    text-decoration: overline;
+    color: grey;
+    font-style: italic;
+}
